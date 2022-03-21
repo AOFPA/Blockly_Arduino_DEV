@@ -27,15 +27,23 @@ Blockly.Blocks['lp2i_u8g_draw_string'] = {
 Blockly.Blocks['led_v2'] = {
     init: function() {
         this.appendDummyInput()
-            .appendField("led pin")
-            .appendField(new Blockly.FieldImage("https://c.tenor.com/6MsukwHKJ58AAAAM/ara-anime.gif", 50, 50, { alt: "*", flipRtl: "FALSE" }));
-        this.appendValueInput("Text")
-            .setCheck("String")
+            .appendField(new Blockly.FieldImage("https://cdn-icons-png.flaticon.com/512/651/651902.png", 100, 100, { alt: "*", flipRtl: "FALSE" }));
+        this.appendDummyInput()
             .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("pin");
+            .appendField(new Blockly.FieldDropdown([
+                ["D1", "D1"],
+                ["D2", "D2"],
+                ["D3", "D3"]
+            ]), "pin");
+        this.appendDummyInput()
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField(new Blockly.FieldDropdown([
+                ["ON", "HIGH"],
+                ["OFF", "LOW"]
+            ]), "status");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(230);
+        this.setColour(105);
         this.setTooltip("");
         this.setHelpUrl("");
     }

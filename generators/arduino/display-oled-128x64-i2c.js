@@ -19,13 +19,25 @@ Blockly.Arduino.lp2i_u8g_draw_string = function() {
 };
 
 //aofpa
-Blockly.Arduino.led_v2 = function() {
-    var text = Blockly.Arduino.valueToCode(this, 'Text', Blockly.Arduino.ORDER_ATOMIC) || '\'\'';
+// Blockly.Arduino.led_v2 = function() {
+//     var text = Blockly.Arduino.valueToCode(this, 'Text', Blockly.Arduino.ORDER_ATOMIC) || '\'\'';
+//     // TODO: Assemble JavaScript into code variable.
+//     Blockly.Arduino.definitions_["define_led"] = 'define LED '
+//     var code = 'printf(' + text + ');\n';
+//     return code;
+// };
+
+Blockly.Arduino.led_v2 = function(block) {
+    var dropdown_pin = block.getFieldValue('pin');
+    var dropdown_status = block.getFieldValue('status');
     // TODO: Assemble JavaScript into code variable.
-    var code = 'printf(' + text + ');\n';
+    value = 'LED' + dropdown_pin;
+    Blockly.Arduino.definitions_[value] = '#define ' + value + ' ' + dropdown_pin + '';
+    Blockly.Arduino.setups_[value] = 'pinMode(' + value + ',OUTPUT);';
+
+    var code = 'digitalWrite(' + value + ',' + dropdown_status + ');\n';
     return code;
 };
-
 
 Blockly.Arduino.led_aofpa = function() {
     var value_text = Blockly.Arduino.valueToCode(this, 'Text', Blockly.Arduino.ORDER_ATOMIC) || '\'\'';

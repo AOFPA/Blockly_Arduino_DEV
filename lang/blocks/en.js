@@ -86,7 +86,7 @@ Blockly.Msg.CONTROLS_SWITCH_TOOLTIP_3 = "If the first value is true, then do the
 Blockly.Msg.CONTROLS_SWITCH_TOOLTIP_4 = "If the first value is true, then do the first block of statements. Otherwise, if the second value is true, do the second block of statements. If none of the values are true, do the last block of statements.";
 Blockly.Msg.CONTROLS_SWITCH_VAR_TOOLTIP = "Drag from the left into here to add";
 Blockly.Msg.CONTROLS_SWITCH_CASEBREAK_TOOLTIP = "Add additional case break do";
-Blockly.Msg.CONTROLS_SWITCH_DEFAULT_TOOLTIP ="Add optional default action";
+Blockly.Msg.CONTROLS_SWITCH_DEFAULT_TOOLTIP = "Add optional default action";
 
 Blockly.Msg.CONTROLS_REPEAT_HELPURL = "https://en.wikipedia.org/wiki/For_loop";
 Blockly.Msg.CONTROLS_REPEAT_INPUT_DO = "do";
@@ -368,7 +368,7 @@ Blockly.Msg.TEXT_ISEMPTY_TITLE = "%1 is empty";
 Blockly.Msg.TEXT_ISEMPTY_TOOLTIP = "Returns true if the provided text is empty.";
 Blockly.Msg.TEXT_JOIN_HELPURL = "https://www.arduino.cc/en/Tutorial/StringAdditionOperator";
 Blockly.Msg.TEXT_JOIN_TITLE_CREATEWITH = "create text with";
-Blockly.Msg.TEXT_PLUS_VAR_TEXT= "join Text";
+Blockly.Msg.TEXT_PLUS_VAR_TEXT = "join Text";
 Blockly.Msg.TEXT_PLUS_VAR_NUM = "with Number";
 Blockly.Msg.TEXT_JOIN_TOOLTIP = "Create a piece of text by joining together items.";
 Blockly.Msg.TEXT_LENGTH_HELPURL = "https://github.com/google/blockly/wiki/Text#text-modification";
@@ -458,17 +458,21 @@ Blockly.Msg.CAT_DFPLAYER = "DFPlayer mini MP3";
 Blockly.Msg.CAT_LED_RGB_CHAIN = "chainable RGB LED";
 Blockly.Msg.CAT_OLED_U8G = "OLED screen I2C";
 
-Blockly.Msg.CAT_ROBUNO = "RobUno";  //added march 17th 2016
+//เพิ่ม
+Blockly.Msg.NTC = "NTC";
+Blockly.Msg.LED = "LED";
+
+Blockly.Msg.CAT_ROBUNO = "RobUno"; //added march 17th 2016
 Blockly.Msg.CAT_ROBUNO_IN = "sensors";
 Blockly.Msg.CAT_ROBUNO_OUT = "actuators";
 Blockly.Msg.CAT_ROBUNO_MOTORS_CC = "moteurs CC";
 
-Blockly.Msg.CAT_FISCHERTECHNIK = "fischertechnik";  //added march 26th 2016
+Blockly.Msg.CAT_FISCHERTECHNIK = "fischertechnik"; //added march 26th 2016
 Blockly.Msg.CAT_FISCHERTECHNIK_IN = "capteurs";
 Blockly.Msg.CAT_FISCHERTECHNIK_OUT = "actionneurs";
 Blockly.Msg.CAT_FISCHERTECHNIK_MOTORS_CC = "moteurs CC";
 
-Blockly.Msg.CAT_GROVE = "Grove";  //added march 9th 2015
+Blockly.Msg.CAT_GROVE = "Grove"; //added march 9th 2015
 Blockly.Msg.CAT_GROVE_IN = "In";
 Blockly.Msg.CAT_GROVE_OUT = "Out";
 Blockly.Msg.CAT_GROVE_LCD = "LCD screen";
@@ -478,7 +482,7 @@ Blockly.Msg.CAT_ROBOTS = "Robots misc."; //Added April 7 2015 ESK
 Blockly.Msg.CAT_ROBOTS_MOTORS = "Shield Motors";
 Blockly.Msg.CAT_ROBOT_MISC = "IR";
 
-Blockly.Msg.CAT_TECHNOZONE = "TechnoZone51";  //added march 11th 2015
+Blockly.Msg.CAT_TECHNOZONE = "TechnoZone51"; //added march 11th 2015
 Blockly.Msg.CAT_TECHNOZONE_IN = "sensors";
 Blockly.Msg.CAT_TECHNOZONE_OUT = "actuators";
 Blockly.Msg.CAT_TECHNOZONE_MOTORS_PAP = "stepper motor";
@@ -497,23 +501,29 @@ Blockly.Msg.CAT_TECHNOZONE_ROBOT_LCD = "LCD screen";
 Blockly.Msg.CAT_TECHNOZONE_ROBOT_BT = "bluetooth";
 Blockly.Msg.CAT_TECHNOZONE_ROBOT_IHM = "HMI console";
 
-Blockly.Msg.CAT_ZUMO = "ZumoBot";	//added april 6th 2015
+Blockly.Msg.CAT_ZUMO = "ZumoBot"; //added april 6th 2015
 Blockly.Msg.CAT_ZUMO_MOTORS = "Motors";
 Blockly.Msg.CAT_ZUMO_SENSORS = "Sensors";
 
-Blockly.Msg.CAT_BQ = "bitbloq";  //added july 14th 2015
+Blockly.Msg.CAT_BQ = "bitbloq"; //added july 14th 2015
 Blockly.Msg.CAT_BQ_IN = "In";
 Blockly.Msg.CAT_BQ_OUT = "Out";
 Blockly.Msg.CAT_BQ_COMM = "Communication";
 
-Blockly.Msg.CAT_JEULIN = "Traffic light";  //added january 11th 2016
+Blockly.Msg.CAT_JEULIN = "Traffic light"; //added january 11th 2016
 Blockly.Msg.CAT_JEULIN_IN = "Sensors";
 Blockly.Msg.CAT_JEULIN_OUT = "Actuators";
 
-Blockly.Msg.CAT_MULTIFUNCTION = "multi-fonction";  //added march 9th 2016
+Blockly.Msg.CAT_MULTIFUNCTION = "multi-fonction"; //added march 9th 2016
 
-Blockly.Msg.FIELDDROPDOWN = [["HIGH", "HIGH"], ["LOW", "LOW"]];
-Blockly.Msg.FIELDDROPDOWN_ONOFF = [["ON", "ON"], ["OFF", "OFF"]];
+Blockly.Msg.FIELDDROPDOWN = [
+    ["HIGH", "HIGH"],
+    ["LOW", "LOW"]
+];
+Blockly.Msg.FIELDDROPDOWN_ONOFF = [
+    ["ON", "ON"],
+    ["OFF", "OFF"]
+];
 Blockly.Msg.INOUT_HIGH_LEVEL = "1 -> HIGH";
 Blockly.Msg.INOUT_LOW_LEVEL = "0 -> low";
 
@@ -534,8 +544,8 @@ Blockly.Msg.ARDUINO_SINCE_PROGRAM_STARTED = "time since program started";
 Blockly.Msg.ARDUINO_SINCE_PROGRAM_STARTED_TOOLTIP = "Number of milliseconds since the program started (unsigned long)";
 Blockly.Msg.ARDUINO_BETWEEN = "random number between";
 Blockly.Msg.ARDUINO_BETWEEN_AND = "and";
-Blockly.Msg.ARDUINO_BASE_MAP_HELPURL ="http://arduino.cc/en/Reference/map";
-Blockly.Msg.ARDUINO_BASE_MAP_NUM ="to the transposed ";
+Blockly.Msg.ARDUINO_BASE_MAP_HELPURL = "http://arduino.cc/en/Reference/map";
+Blockly.Msg.ARDUINO_BASE_MAP_NUM = "to the transposed ";
 Blockly.Msg.ARDUINO_BASE_MAP_DMAX = "over a range of [0-";
 Blockly.Msg.ARDUINO_BASE_MAP_TOOLTIP = "transfer a value on a scale from 0 to 1023 to another scale";
 Blockly.Msg.ARDUINO_BASE_CODE = "Coding";
@@ -581,8 +591,8 @@ Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_INPUT = "read value on the analog input";
 Blockly.Msg.ARDUINO_INOUT_ANALOG_READ_TOOLTIP = "returns a value between 0 and 1023";
 Blockly.Msg.ARDUINO_INOUT_ONOFF_HELPURL = "http://arduino.cc/en/Reference/Constants";
 Blockly.Msg.ARDUINO_INOUT_STATE = "state";
-Blockly.Msg.ARDUINO_PULSEIN="PulseIn (µs) pin#";
-Blockly.Msg.ARDUINO_PULSEIN_TIMEOUT="timeout (µs) ";
+Blockly.Msg.ARDUINO_PULSEIN = "PulseIn (µs) pin#";
+Blockly.Msg.ARDUINO_PULSEIN_TIMEOUT = "timeout (µs) ";
 Blockly.Msg.ARDUINO_SERVO_MOVE_HELPURL = "http://www.arduino.cc/playground/ComponentLib/servo";
 Blockly.Msg.ARDUINO_SERVO_MOVE_INPUT1 = "rotate the servo-motor";
 Blockly.Msg.ARDUINO_SERVO_MOVE_IMAGE = "images/a991.jpg";
@@ -610,8 +620,8 @@ Blockly.Msg.ARDUINO_SERIAL_PRINT_CONTENT = "send the data to the serial port:";
 Blockly.Msg.ARDUINO_SERIAL_PRINTLN_CONTENT = "print new line data on serial port:";
 Blockly.Msg.ARDUINO_SERIAL_PRINT_TAB_CONTENT = "print with tab data on serial port:";
 Blockly.Msg.ARDUINO_SERIAL_PRINT_TOOLTIP = "sends data over the serial port for sruvaillance by the monitor in ASCII";
-Blockly.Msg.ARDUINO_SERIAL_PRINT_VAR_TEXT = "print text on serial port :"; 
-Blockly.Msg.ARDUINO_SERIAL_PRINT_VAR_NUMBER = "with this following number :"; 
+Blockly.Msg.ARDUINO_SERIAL_PRINT_VAR_TEXT = "print text on serial port :";
+Blockly.Msg.ARDUINO_SERIAL_PRINT_VAR_NUMBER = "with this following number :";
 Blockly.Msg.ARDUINO_SERIAL_PRINT_VAR_NEW_LINE = "and go to a new line ?";
 
 Blockly.Msg.LKL_ATTACHINTERRUPT_PIN = "attachInterrupt pin#";
@@ -619,42 +629,47 @@ Blockly.Msg.LKL_DETACHINTERRUPT_PIN = "detachInterrupt pin#";
 Blockly.Msg.LKL_TOOLTIP_INOUT_ATTACHINTERRUPT = 'Attachs interrupt to a specific Port';
 Blockly.Msg.LKL_TOOLTIP_INOUT_DETACHINTERRUPT = 'Detachs interrupt to a specific Port';
 Blockly.Msg.LKL_MODE = 'mode';
-Blockly.Msg.LKL_DROPDOWN = [['RISING', "RISING"], ['FALLING', "FALLING"], ['CHANGE', "CHANGE"], ['LOW', "LOW"]];
+Blockly.Msg.LKL_DROPDOWN = [
+    ['RISING', "RISING"],
+    ['FALLING', "FALLING"],
+    ['CHANGE', "CHANGE"],
+    ['LOW', "LOW"]
+];
 
 //SERIAL
-Blockly.Msg.Serial_Init="Serial communication init speed";
-Blockly.Msg.Serial_Print="Serial Print console";
-Blockly.Msg.Serial_Write="Serial write";
-Blockly.Msg.Serial_write_out="Write";
-Blockly.Msg.Serial_Print_Format="Print  Format";
-Blockly.Msg.Serial_Print_ForDecimal="decimal";
-Blockly.Msg.Serial_Print_ForHexa="hexadecimal";
-Blockly.Msg.Serial_Print_ForBin="binary";
-Blockly.Msg.Serial_Print_ForOct="octal";
-Blockly.Msg.Serial_read="Serial Read";
-Blockly.Msg.Serial_avai="Serial Available?";
-Blockly.Msg.Serial_flush="Serial flush";
+Blockly.Msg.Serial_Init = "Serial communication init speed";
+Blockly.Msg.Serial_Print = "Serial Print console";
+Blockly.Msg.Serial_Write = "Serial write";
+Blockly.Msg.Serial_write_out = "Write";
+Blockly.Msg.Serial_Print_Format = "Print  Format";
+Blockly.Msg.Serial_Print_ForDecimal = "decimal";
+Blockly.Msg.Serial_Print_ForHexa = "hexadecimal";
+Blockly.Msg.Serial_Print_ForBin = "binary";
+Blockly.Msg.Serial_Print_ForOct = "octal";
+Blockly.Msg.Serial_read = "Serial Read";
+Blockly.Msg.Serial_avai = "Serial Available?";
+Blockly.Msg.Serial_flush = "Serial flush";
 
 //SOFTWARE SERIAL
-Blockly.Msg.SSERIAL_Init="INIT";
-Blockly.Msg.SSERIAL_SPEED="speed";
-Blockly.Msg.SSERIAL_TX="TX#";
-Blockly.Msg.SSERIAL_RX="RX#";
-Blockly.Msg.SSERIAL_Read="SoftwareSerial Read";
-Blockly.Msg.SSERIAL_Print="SoftwareSerial Print";
-Blockly.Msg.SSERIAL_Write="SoftwareSerial Write";
-Blockly.Msg.SSERIAL_Avai="SoftwareSerial Available?";
+Blockly.Msg.SSERIAL_Init = "INIT";
+Blockly.Msg.SSERIAL_SPEED = "speed";
+Blockly.Msg.SSERIAL_TX = "TX#";
+Blockly.Msg.SSERIAL_RX = "RX#";
+Blockly.Msg.SSERIAL_Read = "SoftwareSerial Read";
+Blockly.Msg.SSERIAL_Print = "SoftwareSerial Print";
+Blockly.Msg.SSERIAL_Write = "SoftwareSerial Write";
+Blockly.Msg.SSERIAL_Avai = "SoftwareSerial Available?";
 
 //VARIABLES 
-Blockly.Msg.ARDUINO_VAR_DECLARE="Declare";
-Blockly.Msg.ARDUINO_VAR_AS="as";
-Blockly.Msg.ARDUINO_VAR_VAL="value";
+Blockly.Msg.ARDUINO_VAR_DECLARE = "Declare";
+Blockly.Msg.ARDUINO_VAR_AS = "as";
+Blockly.Msg.ARDUINO_VAR_VAL = "value";
 
 //Conversions
-Blockly.Msg.CONV_tochar="Convert to char "; 
-Blockly.Msg.CONV_tobyte="Convert to Byte ";
-Blockly.Msg.CONV_toint="Convert to Int ";
-Blockly.Msg.CONV_tofloat="Convert to Float ";
+Blockly.Msg.CONV_tochar = "Convert to char ";
+Blockly.Msg.CONV_tobyte = "Convert to Byte ";
+Blockly.Msg.CONV_toint = "Convert to Int ";
+Blockly.Msg.CONV_tofloat = "Convert to Float ";
 
 //added april 6th 2015
 Blockly.Msg.GROVE_INOUT_LED_HELPURL = "http://www.seeedstudio.com/wiki/index.php?title=GROVE_-_Starter_Bundle_V1.0b#LED";
@@ -708,7 +723,11 @@ Blockly.Msg.GROVE_INOUT_LCD_EFFECT_HELPURL = "http://www.seeedstudio.com/wiki/in
 Blockly.Msg.GROVE_INOUT_LCD_EFFECT_TEXT = "Serial LCD";
 Blockly.Msg.GROVE_INOUT_LCD_EFFECT_INPUT = "PIN#";
 Blockly.Msg.GROVE_INOUT_LCD_EFFECT_EFFECT = "Effect";
-Blockly.Msg.GROVE_INOUT_LCD_EFFECT_EFFECT_EFFECT = [["Scroll Left", "LEFT"], ["Scroll Right", "RIGHT"], ["Scroll Auto", "AUTO"]];
+Blockly.Msg.GROVE_INOUT_LCD_EFFECT_EFFECT_EFFECT = [
+    ["Scroll Left", "LEFT"],
+    ["Scroll Right", "RIGHT"],
+    ["Scroll Auto", "AUTO"]
+];
 Blockly.Msg.GROVE_INOUT_LCD_EFFECT_TOOLTIP = "Turn LCD power on/off";
 Blockly.Msg.GROVE_INOUT_SOUND_HELPURL = "http://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor";
 Blockly.Msg.GROVE_INOUT_SOUND_TEXT = "Sound Sensor";
@@ -726,17 +745,29 @@ Blockly.Msg.GROVE_INOUT_ULTRASONIC_HELPURL = "http://www.seeedstudio.com/wiki/Gr
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_TEXT = "Ultrasonic Ranger";
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_INPUT = "PIN#";
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_UNIT = "unit";
-Blockly.Msg.GROVE_INOUT_ULTRASONIC_UNIT_CHOICE = [["cm", "cm"],  ["inch", "inch"]];
+Blockly.Msg.GROVE_INOUT_ULTRASONIC_UNIT_CHOICE = [
+    ["cm", "cm"],
+    ["inch", "inch"]
+];
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_TOOLTIP = "Non-contact distance measurement module";
 Blockly.Msg.GROVE_INOUT_MOTOR_HELPURL = "http://www.seeedstudio.com/wiki/Motor_Shield";
 Blockly.Msg.GROVE_INOUT_MOTOR_TEXT = "Motor";
-Blockly.Msg.GROVE_INOUT_MOTOR_CHOICE = [["Stop", "stop"], ["Forward", "forward"], ["Right", "right"], ["Left", "left"], ["Backward", "backward"]];
+Blockly.Msg.GROVE_INOUT_MOTOR_CHOICE = [
+    ["Stop", "stop"],
+    ["Forward", "forward"],
+    ["Right", "right"],
+    ["Left", "left"],
+    ["Backward", "backward"]
+];
 Blockly.Msg.GROVE_INOUT_MOTOR_TOOLTIP = "Drive two brushed DC motors";
 Blockly.Msg.GROVE_INOUT_JOYSTICK_HELPURL = "http://www.seeedstudio.com/wiki/Grove_-_Thumb_Joystick";
 Blockly.Msg.GROVE_INOUT_JOYSTICK_TEXT1 = "Thumb Joystick";
 Blockly.Msg.GROVE_INOUT_JOYSTICK_TEXT2 = "axis";
 Blockly.Msg.GROVE_INOUT_JOYSTICK_INPUT = "PIN#";
-Blockly.Msg.GROVE_INOUT_JOYSTICK_AXES = [["x", "x"],  ["y", "y"]];
+Blockly.Msg.GROVE_INOUT_JOYSTICK_AXES = [
+    ["x", "x"],
+    ["y", "y"]
+];
 Blockly.Msg.GROVE_INOUT_JOYSTICK_TOOLTIP = "output two analog values(200~800) representing two directions";
 Blockly.Msg.GROVE_INOUT_RGBLED_HELPURL = "http://www.seeedstudio.com/wiki/index.php?title=Twig_-_Chainable_RGB_LED";
 Blockly.Msg.GROVE_INOUT_RGBLED_TEXT = "RGB LED";
@@ -758,7 +789,7 @@ Blockly.Msg.GROVE_INOUT_BT_TOOLTIP = "Bluetooth V2.0+EDR slave. Support single s
 Blockly.Msg.ROBOTS_MOTORS_FORWARD = "Forward";
 Blockly.Msg.ROBOTS_MOTORS_BACKWARD = "Backward";
 Blockly.Msg.ROBOTS_MOTORS_STOP = "Stop";
-Blockly.Msg.ROBOTS_MOTORS_LEFT= "Left";
+Blockly.Msg.ROBOTS_MOTORS_LEFT = "Left";
 Blockly.Msg.ROBOTS_MOTORS_RIGHT = "Right";
 Blockly.Msg.ROBOTS_MOTORS_SPEEDR = "Speed R/B";
 Blockly.Msg.ROBOTS_MOTORS_SPEEDL = "Speed L/A";
@@ -1176,7 +1207,7 @@ Blockly.Msg.ROBUNO_TEXT16 = "Carte de commande de deux moteurs CC";
 
 Blockly.Msg.ROBUNO_LUX_TITLE1 = "la luminosité lue sur la LDR Gauche";
 Blockly.Msg.ROBUNO_LUX_TITLE2 = "la luminosité lue sur la LDR Droite";
-Blockly.Msg.ROBUNO_LUX_TOOLTIP = "entrée Capteur de Luminosité"; 
+Blockly.Msg.ROBUNO_LUX_TOOLTIP = "entrée Capteur de Luminosité";
 Blockly.Msg.ROBUNO_PIN_ANALOG = "sur la broche Analogique";
 Blockly.Msg.ROBUNO_HELPURL = "www.technologieservices.fr/fr/a-a1000022060-edc1000003/article/RUSA-Robot-RobUno-a-servomoteurs.html";
 
@@ -1200,7 +1231,7 @@ Blockly.Msg.FISCHERTECHNIK_TEXT8 = "le capteur magnétique";
 Blockly.Msg.FISCHERTECHNIK_BUZZER1_TOOLTIP = "Sortie Buzzer (réf : BUZZER)";
 Blockly.Msg.FISCHERTECHNIK_PIN = "sur la broche";
 Blockly.Msg.FISCHERTECHNIK_LUX_TITLE1 = "la luminosité lue sur le capteur de lumière";
-Blockly.Msg.FISCHERTECHNIK_LUX_TOOLTIP = "Entrée capteur de Luminosité"; 
+Blockly.Msg.FISCHERTECHNIK_LUX_TOOLTIP = "Entrée capteur de Luminosité";
 Blockly.Msg.FISCHERTECHNIK_PIN_ANALOG = "sur la broche Analogique";
 
 Blockly.Msg.FISCHERTECHNIK_TEXT9 = "commande le moteur";

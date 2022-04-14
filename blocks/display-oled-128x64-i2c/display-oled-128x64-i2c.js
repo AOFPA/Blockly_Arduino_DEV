@@ -23,54 +23,6 @@ Blockly.Blocks['lp2i_u8g_draw_string'] = {
         this.setHelpUrl('http://blogpeda.ac-poitiers.fr/techno-jean-mace/2016/02/07/utilisation-dun-afficheur-oled-128x64-i2c-avec-blockly-arduino/');
     }
 };
-//aofpa
-Blockly.Blocks['led_v2'] = {
-    init: function() {
-        this.appendDummyInput()
-            .appendField(new Blockly.FieldImage("https://cdn-icons-png.flaticon.com/512/651/651902.png", 100, 100, { alt: "*", flipRtl: "FALSE" }));
-        this.appendDummyInput()
-            .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField(new Blockly.FieldDropdown([
-                ["D1", "D1"],
-                ["D2", "D2"],
-                ["D3", "D3"]
-            ]), "pin");
-        this.appendDummyInput()
-            .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField(new Blockly.FieldDropdown([
-                ["ON", "HIGH"],
-                ["OFF", "LOW"]
-            ]), "status");
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
-        this.setColour(105);
-        this.setTooltip("");
-        this.setHelpUrl("");
-    }
-};
-
-Blockly.Blocks['led_aofpa'] = {
-    init: function() {
-        this.appendDummyInput()
-            .appendField("LED_AOFPA")
-            .appendField(new Blockly.FieldImage("https://cf.shopee.co.th/file/211307a8d8e137784a1ba3b13056d51a", 150, 150, { alt: "*", flipRtl: "FALSE" }))
-        this.appendValueInput("Text", 'String')
-            .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("a");
-        this.appendValueInput("X", 'Number')
-            .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("B");
-        this.appendValueInput("Y", 'Number')
-            .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("C");
-        this.setInputsInline(false);
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
-        this.setColour("#1B2944");
-        this.setTooltip('');
-        this.setHelpUrl('http://blogpeda.ac-poitiers.fr/techno-jean-mace/2016/02/07/utilisation-dun-afficheur-oled-128x64-i2c-avec-blockly-arduino/');
-    }
-};
 
 
 Blockly.Blocks['lp2i_u8g_draw_4strings'] = {

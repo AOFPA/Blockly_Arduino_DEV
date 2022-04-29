@@ -461,6 +461,7 @@ Blockly.Msg.CAT_OLED_U8G = "OLED screen I2C";
 //เพิ่ม
 Blockly.Msg.NTC = "NTC";
 Blockly.Msg.LED = "LED";
+Blockly.Msg.LED_RGB = "LED RGB";
 
 Blockly.Msg.CAT_ROBUNO = "RobUno"; //added march 17th 2016
 Blockly.Msg.CAT_ROBUNO_IN = "sensors";

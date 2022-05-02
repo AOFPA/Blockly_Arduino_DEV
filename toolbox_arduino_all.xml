@@ -449,7 +449,7 @@
 	</category>
 
 		<!-- เพิ่ม LED-->
-	<category name="LED" colour="#1B2944">
+	<category name="LED" colour="#FF0000">
 		<block type="led">
 		</block>
 		<block type="led_blink">
@@ -463,7 +463,7 @@
 	<!-- สิ้นสุด LED-->
 
 		<!-- เพิ่ม NTC-->
-	<category name="NTC" colour="#1B2944">
+	<category name="NTC" colour="#581845">
 		<block type="ntc_config">
 			<value name="R_NTC">
 				<shadow type="math_number">
@@ -491,7 +491,7 @@
 	<!-- สิ้นสุด NTC-->
 
 	<!-- เพิ่ม LED RGB -->
-	<category name="LED_RGB" colour="#FF69B4">
+	<category name="LED_RGB" colour="#00FF00">
 		<block type="led_rgb_config">
 		</block>
 	</category>

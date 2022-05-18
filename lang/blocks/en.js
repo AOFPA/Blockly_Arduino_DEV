@@ -462,6 +462,16 @@ Blockly.Msg.CAT_OLED_U8G = "OLED screen I2C";
 Blockly.Msg.NTC = "NTC";
 Blockly.Msg.LED = "LED";
 Blockly.Msg.LED_RGB = "LED RGB";
+Blockly.Msg.DHT22 = "DHT22";
+
+// เพิ่ม 5/5/2022
+Blockly.Msg.LCD_I2C = "LCD I2C";
+
+// เพิ่ม 7/5/2022
+Blockly.Msg.tact_switch = "Tact Switch";
+Blockly.Msg.button_State = "variable button State";
+Blockly.Msg.value = "Value Pin";
+Blockly.Msg.buttonPin = "variable button Pin";
 
 Blockly.Msg.CAT_ROBUNO = "RobUno"; //added march 17th 2016
 Blockly.Msg.CAT_ROBUNO_IN = "sensors";

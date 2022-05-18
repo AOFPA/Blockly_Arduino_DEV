@@ -497,6 +497,39 @@
 	</category>
 	<!-- END LED RGB -->
 
+
+	<!-- เพิ่ม DHT22 -->
+	<category name="DHT22" colour="#00FF00">
+		<block type="dht22_config">
+		</block>
+	</category>
+	<!-- จบ DHT22 -->
+
+
+	<!-- เพิ่ม LCD I2C -->
+	<category name="LCD_I2C" colour="#2475FA">
+		<block type="LCD_TEST"></block>
+		<block type="SET_CURSOR"></block>
+		<block type="LCD_PRINT"></block>
+		<block type="LCD_PRINT_TEXT" colour="#1B2944">
+			<value name="Text">
+				<shadow type="text">
+					<field name="TEXT">Exemple</field>
+				</shadow>
+			</value>
+		</block>
+	</category>
+	<!-- จบ LCD I2C -->
+	
+
+	<!-- เพิ่ม tact switch -->
+	<category name="tact_switch" colour="#17202A">
+		<block type="buttonState"></block>
+		<!-- <block type="buttonState_Read"></block> -->
+		<block type="buttonPin"></block>
+	</category>
+	<!-- จบ tact switch -->
+
 	<category name="CAT_LED_RGB_CHAIN" colour="#C9D7E2">
 		<block type="lp2i_ledRGB_WS2812B_init">
 			<value name="Pin_LedRGB">
